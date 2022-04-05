@@ -9,7 +9,7 @@ const corsOptions = {
   optionsSuccessStatus: 200 
 }
 app.use(express.static('static'));
-app.options('*', cors(corsOptions));
+app.use('*', cors(corsOptions));
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve('pages/index.html'));
