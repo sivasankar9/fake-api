@@ -7,7 +7,7 @@
     "watch": "nodemon ./index.js",
     "start:node": "node index.js"
   },
-  "author": "manasa sivasankar",
+  "author": "sivasankar",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

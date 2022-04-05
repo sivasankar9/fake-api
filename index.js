@@ -2,8 +2,14 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 7000;
 const path = require('path');
+const cors = require('cors');
 
+const corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200 
+}
 app.use(express.static('static'));
+app.options('*', cors(corsOptions));
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve('pages/index.html'));
