@@ -1,0 +1,20 @@
+{
+  "name": "fake-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon ./index.js",
+    "start:node": "node index.js"
+  },
+  "author": "manasa sivasankar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0"
+  }
+}
