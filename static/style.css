@@ -1,3 +1,55 @@
-h1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.coupon-wrapper:not(:last-child) {
+  margin-bottom: 10px;
+}
+.br2 {
+  border-radius: 0.25rem;
+}
+.white {
+  color: #fff;
+}
+.bg-black-70 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.coupon-wrapper {
+  margin-bottom: 43px;
+  padding-bottom: 25px;
+  width: fit-content;
+}
+.coupon-wrapper,
+h6 {
+  font-size: 14px;
+}
+.b--light-silver {
+  border-color: #aaa;
+  border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.coupon-wrapper,
+p {
+  font-size: 12px;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.mb {
+  margin-bottom: 10px;
+}
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Consolas, monaco, monospace;
+}
+.avenir {
+  font-family: avenir next, avenir, sans-serif;
+}
+.pa2 {
+  padding: 0.5rem;
+}
+.lht{
+  line-height: 1.5;
 }

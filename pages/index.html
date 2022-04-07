@@ -1,29 +1,47 @@
 <link rel="stylesheet" href="./style.css">
 <h1>Fake api</h1>
 <small>Author siva sankar</small>
-<img src="assets/images/test.svg" />
 <h4>V2 Documentation</h4>
 
-<ul>
-    <li>
-        <div>
-            <h6>Active coupon</j6>
-                <p>
-                    curl -X POST --data '{"coupon":"act20"}' --header "Content-Type: application/json"
-                    http://localhost:7000/apply-coupon
 
-                </p>
+<div class="coupon-wrapper b--light-silver lht">
+    <h6>Active coupon</h6>
+    <p class="avenir mb"> return a json</p>
+    <code class="code f6 db pa2 bg-black-70 white br2 ww-break ww-normal-ns">
+    curl -X POST --data '{"coupon":"act20"}' --header "Content-Type: application/json"
+    https://test-api-fake-dummy.herokuapp.com/apply-coupon
 
-        </div>
-        <div>
-            <h6>Expired coupon</j6>
-                <p>
-                    curl -X POST --data '{"coupon":"ps19"}' --header "Content-Type: application/json"
-                    http://localhost:7000/apply-coupon
+</code>
 
-                </p>
+</div>
+<div class="coupon-wrapper b--light-silver lht">
+    <h6>Expired coupon</h6>
+    <p class="avenir mb">return a json object</p>
+    <code class="code f6 db pa2 bg-black-70 white br2 ww-break ww-normal-ns">
+curl -X POST --data '{"coupon":"ps19"}' --header "Content-Type: application/json"
+https://test-api-fake-dummy.herokuapp.com/apply-coupon
 
-        </div>
+</code>
 
-    </li>
-</ul>
+</div>
+
+
+<div class="coupon-wrapper b--light-silver lht">
+    <h6>Status code</h6>
+    <p class="avenir mb"> return status 400</p>
+    <code class="code f6 db pa2 bg-black-70 white br2 ww-break ww-normal-ns">
+    curl https://test-api-fake-dummy.herokuapp.com/faq
+
+</code>
+
+</div>
+
+
+<div class="coupon-wrapper b--light-silver lht">
+    <h6>faqs</h6>
+    <p class="avenir mb"> return a Array</p>
+    <code class="code f6 db pa2 bg-black-70 white br2 ww-break ww-normal-ns">
+    curl https://test-api-fake-dummy.herokuapp.com/faqs
+
+</code>
+</div>
