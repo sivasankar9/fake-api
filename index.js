@@ -43,7 +43,7 @@ app.get("/faqs", (req, res) => {
 });
 
 app.get("/tableofcontents", (req, res) => {
-  return [
+  const records =  [
     "Prerequisites",
     "Overview",
     "Declare app dependencies",
@@ -56,6 +56,7 @@ app.get("/tableofcontents", (req, res) => {
     "Provision a database",
     "Next steps",
   ];
+  res.send(records)
 });
 
 app.post("/apply-coupon", (req, res) => {
